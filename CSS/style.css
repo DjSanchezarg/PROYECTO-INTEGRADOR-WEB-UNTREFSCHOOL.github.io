@@ -43,9 +43,11 @@ box-sizing: border-box;
     list-style: none;
     color:#EFF5F5;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 400;
+    font-family: 'Belanosima', sans-serif;
     padding: 20px;
-    font-size: 10px;
+   
+   
     
   
    
@@ -74,6 +76,7 @@ header ul{
 .link{
  
   
+ 
     background-color: #00425A;
     text-align: center;
   
@@ -180,7 +183,6 @@ article.propuestasedu {
 }
 
 
-
  footer{
 
   display: flex;
@@ -193,19 +195,7 @@ article.propuestasedu {
  gap: 2rem ;
 
 
-
-
-        /* display: flex;
-        flex-flow: row wrap ;
-        justify-content: space-between;
-        align-items: center;
-        box-sizing: border-box;
-        background-color: #00425A;
-        color:#EFF5F5; */
-
-
-
-        
+       
 
     }
 h3{
@@ -251,13 +241,12 @@ spam{
 
 _______________
 
-*, *:before, *:after {
-    box-sizing: border-box;
-  }
+
   
   body {
-    font-family: 'Nunito', sans-serif;
-    color: #384047;
+    font-family: 'Poppins', sans-serif;
+    color: #00425A ;
+    background-color: #EFF5F5;
   }
   
   form {
@@ -275,16 +264,16 @@ _______________
   }
   
   input[type="text"],
-  input[type="password"],
+ 
   input[type="date"],
   input[type="datetime"],
   input[type="email"],
   input[type="number"],
-  input[type="search"],
-  input[type="tel"],
+
+ 
   input[type="time"],
-  input[type="url"],
-  input[type="file"],
+ 
+ 
   textarea,
   select {
     background: rgba(255,255,255,0.1);
@@ -294,23 +283,16 @@ _______________
     margin: 0;
     outline: 0;
     padding: 15px;
-    width: 100%;
+    width: 92%;
     background-color: #e8eeef;
     color: #8a97a0;
     box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
     margin-bottom: 30px;
   }
   
-  input[type="radio"],
-  input[type="checkbox"] {
-    margin: 0 4px 8px 0;
-  }
+
   
-  select {
-    padding: 6px;
-    height: 32px;
-    border-radius: 2px;
-  }
+
   
   button[type="submit"] {
     padding: 19px 39px 18px 39px;
@@ -344,37 +326,15 @@ _______________
   fieldset {
     margin-bottom: 30px;
     border: double;
+    margin: 0px;
   }
   
-  legend {
-    font-size: 1.4em;
-    margin-bottom: 10px;
-  }
+
   
-  label {
-    display: block;
-    margin-bottom: 8px;
-  }
+ 
+
   
-  input[type="radio"]+label,
-  input[type="checkbox"]+label {
-    font-weight: 300;
-    display: inline-block;
-  }
-  
-  span {
-    background-color: #5fcf80;
-    color: #fff;
-    height: 30px;
-    width: 30px;
-    display: inline-block;
-    font-size: 0.8em;
-    margin-right: 4px;
-    line-height: 30px;
-    text-align: center;
-    text-shadow: 0 1px 0 rgba(255,255,255,0.2);
-    border-radius: 100%;
-  }
+
   
   @media screen and (min-width: 480px) {
   
