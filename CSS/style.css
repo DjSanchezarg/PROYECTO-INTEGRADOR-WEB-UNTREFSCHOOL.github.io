@@ -125,6 +125,7 @@ aside {
     background: none;
   }
 
+
   .quienessomos span{
     position: relative;
     left: 15px;
@@ -133,6 +134,8 @@ aside {
     color:#e8eeef;   
     font-family: 'Poppins', sans-serif;
     background: none;
+    font-weight: bold;
+    color: #FC7300;
   }
   
 .porque{
@@ -146,8 +149,20 @@ h2{ font-family: 'Belanosima', sans-serif;}
 
 .propuestasedu{
   display: flex;
-  gap: 1rem;
+  gap: 4rem;
   align-content: center;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  margin-left: 2px;
+}
+
+article  h3{
+  padding: 0px;
+}
+
+article.propuestasedu {
+  width: 90px;
+  height: 90px;
 }
 
 .hexagono1{
@@ -155,22 +170,54 @@ h2{ font-family: 'Belanosima', sans-serif;}
   overflow: hidden;
   width: 90px;                                                                                                      ;
   height: 90px;
+   margin-left: 10px;
 }
 
+.noticia{
+  margin-right: 20px;
+  padding: 0px;
+  background: none;
+}
+
+
+
  footer{
-        display: flex;
+
+  display: flex;
+  justify-content: center;
+ list-style: none;
+ color:#EFF5F5;
+ background-color: #00425A;
+ box-sizing: border-box;
+ align-items: center;
+ gap: 2rem ;
+
+
+
+
+        /* display: flex;
         flex-flow: row wrap ;
         justify-content: space-between;
         align-items: center;
         box-sizing: border-box;
         background-color: #00425A;
-        color:#EFF5F5;
+        color:#EFF5F5; */
+
+
+
+        
+
     }
 h3{
     text-align: center;
     padding-left: 15px;
     margin: 0px;
-}
+  }
+    .footeruntre h3{
+font-size:70%;
+    }
+    
+
 
    h4{
         text-align: center;
@@ -178,7 +225,7 @@ h3{
         margin: 0px;
     }
 .contacto{
-    margin-right: 2rem;
+    margin-right: 0.5rem;
 }
 
 @media screen and (max-width: 750px) {
@@ -194,10 +241,10 @@ spam{
   background-color: none;
 }
 
-    h3{
-        display: none;
-    }
-
+    
+.footeruntre{
+  display: none;
+}
    
 }
 
