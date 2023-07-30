@@ -1,10 +1,21 @@
 
+/* Consigan de colores (Paleta de colores: #FC7300 , #1F8A70 , #00425A , #181823, #EFF5F5) */
+
+:root {
+  --borde-sobra-snaranja: #FC7300;
+  --background-1-sazul: #00425A;
+  --background-2-sbeige: #EFF5F5;
+  --background-3-sverde: #1F8A70;
+  --main-bg-color-negro: #181823;
+  
+} 
+ 
 
 
 body{
   font-family: 'Poppins', sans-serif;
-    width: 80%;
-    max-width: 768px;
+    width: 100%;
+   
     min-width: 320px;
     margin: auto;
     background-color: #00425A ;
@@ -13,15 +24,17 @@ body{
 }
 
 .contenedor{
-    width: 80%;
-    max-width: 768px;
+    width: 95%;
+    max-width: 968px;
+
     min-width: 320px;
-    max-height: auto;
-    margin:0 auto;
+   
+    margin:auto;
     overflow:hidden;
-    border: 10px  solid #FC7300;
-    padding: 2%;
-    background-color: #EFF5F5;
+
+    border: 10px  solid var(--borde-sobra-snaranja);
+    padding: 0%;
+    background-color: var(--background-2-sbeige);
 
 }
 
@@ -39,7 +52,7 @@ box-sizing: border-box;
    
 
     display: flex;
-     justify-content: center;
+    justify-content: center;
     list-style: none;
     color:#EFF5F5;
     text-decoration: none;
@@ -55,9 +68,9 @@ box-sizing: border-box;
  }      
 
  nav ul li a:hover{
-    color: #FC7300;
+    color: var(--borde-sobra-snaranja);
     font:bold;
-    text-shadow: #00425A;
+    text-shadow: var(--background-1-sazul);
     
  }
 
@@ -75,47 +88,41 @@ header ul{
 
 .link{
  
-  
- 
-    background-color: #00425A;
+      background-color: var(--background-1-sazul);
     text-align: center;
   
  
 }
 
 .hide{
-  color: #EFF5F5;
+  color: var(--background-2-sbeige);
   cursor: pointer;
   display: none;
   padding: 10px;
+}
 
-}
-.fa{
-  float:left;
-  padding-left: 10px;
-}
 
 .imgchicos h1{
   margin: 0;
 }
 
 h1{
-    margin: auto;
-    
+    margin:0px;
     text-align: center;
     padding:0;
-    background-color: #EFF5F5;
-    border: 3px solid #1F8A70
+    background-color: var(--background-2-sbeige);
+    border: 3px solid var(--background-3-sverde)
+    }
+   
+   
 
-    
-}
 
 aside {
     width: 20%;
     height: 20%;
-    margin: 0px;
+    margin: 2px;
     padding-left: 15px;
-    margin-left: 0px;
+    margin-left: px;
    
     float: right;
     font-style: italic;
@@ -127,19 +134,11 @@ aside {
     padding: 0px;
     background: none;
   }
+p{
+  padding: 5px;
+}
 
-
-  .quienessomos span{
-    position: relative;
-    left: 15px;
-    top: -55px;
-    border: 3px; 
-    color:#e8eeef;   
-    font-family: 'Poppins', sans-serif;
-    background: none;
-    font-weight: bold;
-    color: #FC7300;
-  }
+  
   
 .porque{
        margin-right: 60px;
@@ -147,12 +146,15 @@ aside {
     background: none;
   }
 
-h2{ font-family: 'Belanosima', sans-serif;}
+h2{ 
+  font-family: 'Belanosima', sans-serif;
+  padding: 5px;
+}
 
 
 .propuestasedu{
   display: flex;
-  gap: 4rem;
+  gap: 10%;
   align-content: center;
   margin-right: 10px;
   margin-bottom: 20px;
@@ -188,16 +190,14 @@ article.propuestasedu {
   display: flex;
   justify-content: center;
  list-style: none;
- color:#EFF5F5;
- background-color: #00425A;
+ color: var(--background-2-sbeige);
+ background-color: var(--background-1-sazul);
  box-sizing: border-box;
  align-items: center;
  gap: 2rem ;
 
-
-       
-
     }
+    
 h3{
     text-align: center;
     padding-left: 15px;
@@ -218,9 +218,17 @@ font-size:70%;
     margin-right: 0.5rem;
 }
 
-@media screen and (max-width: 750px) {
-    .contenedor{
-        width: 100%;
+@media screen and (max-width: 550px) {
+  
+  body{
+    width: 100%;
+    margin: 0px;
+  }
+  
+  .contenedor{
+        width: 95%;
+        margin:0px;
+        
     }
 
   h1{
@@ -231,40 +239,62 @@ spam{
   background-color: none;
 }
 
+.porque {
+  display: none;
+}
     
+.quienessomos{
+  display: none;
+}
+
 .footeruntre{
   display: none;
 }
-   
+
+
+
+nav ul {
+  flex-direction: column;
+  align-items: flex-start;
 }
 
+nav ul li a {
+  padding: 5px;
+  font-size: 12px;
+}
 
-_______________
+.h1index{
+display: block;
+height: 3rem;
+width: 9rem;
+font-size: 9px;
+position: absolute;
+top: 13px;
+right: 13px;
 
+}
 
+}
+
+/* CSS Formulario */
   
-  body {
-    font-family: 'Poppins', sans-serif;
-    color: #00425A ;
-    background-color: #EFF5F5;
-  }
+  
   
   form {
     max-width: 300px;
     margin: 10px auto;
     padding: 10px 20px;
-    background: #f4f7f8;
+    background: var(--background-2-sbeige);
     border-radius: 8px;
-    accent-color: #3ac162;
+    accent-color: var(--background-3-sverde);
   }
   
-  h1 {
+  .h1form {
     margin: 0 0 30px 0;
     text-align: center;
   }
   
   input[type="text"],
- 
   input[type="date"],
   input[type="datetime"],
   input[type="email"],
@@ -276,17 +306,17 @@ _______________
  
   textarea,
   select {
-    background: rgba(255,255,255,0.1);
-    border: none;
+    background: var(--main-bg-color-negro) ;
+    border:none;
     font-size: 16px;
     height: auto;
     margin: 0;
     outline: 0;
     padding: 15px;
     width: 92%;
-    background-color: #e8eeef;
+    background-color: var(--background-2-sbeige);
     color: #8a97a0;
-    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    box-shadow: 1px 1px 0 var(--background-3-sverde) inset;
     margin-bottom: 30px;
   }
   
@@ -303,21 +333,21 @@ _______________
     font-style: normal;
     border-radius: 5px;
     width: 100%;
-    border: 1px solid #3ac162;
+    border: 1px solid var(--background-3-sverde);
     border-width: 1px 1px 3px;
     box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
     margin-bottom: 10px;
   }
   button[type="reset"] {
     padding: 19px 39px 18px 39px;
-    color: #FFF;
-    background-color: #b23a48;
+    color: var(--background-2-sbeige);
+    background-color: var(--borde-sobra-snaranja);
     font-size: 18px;
     text-align: center;
     font-style: normal;
     border-radius: 5px;
     width: 100%;
-    border: 1px solid #b23a48;
+    border: 1px solid var(--borde-sobra-snaranja);
     border-width: 1px 1px 3px;
     box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
     margin-bottom: 10px;
