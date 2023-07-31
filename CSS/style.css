@@ -102,8 +102,10 @@ header ul{
 }
 
 
-.imgchicos h1{
+.imgchicos {
+  
   margin: 0;
+
 }
 
 h1{
@@ -194,7 +196,7 @@ article.propuestasedu {
  background-color: var(--background-1-sazul);
  box-sizing: border-box;
  align-items: center;
- gap: 2rem ;
+ gap: 10rem ;
 
     }
     
@@ -203,6 +205,8 @@ h3{
     padding-left: 15px;
     margin: 0px;
   }
+
+
     .footeruntre h3{
 font-size:70%;
     }
@@ -247,8 +251,15 @@ spam{
   display: none;
 }
 
+footer{
+display: flex;
+  justify-content: flex-start;
+  gap: 2rem ;
+}
+
 .footeruntre{
   display: none;
+  
 }
 
 
