@@ -19,20 +19,21 @@ body{
     min-width: 320px;
     margin: auto;
     background-color: #00425A ;
+    box-sizing: border-box
     
     
 }
 
 .contenedor{
-    width: 95%;
-    max-width: 968px;
+    width: 98%;
+    /* max-width: 968px; */
 
     min-width: 320px;
    
     margin:auto;
     overflow:hidden;
 
-    border: 10px  solid var(--borde-sobra-snaranja);
+    border: 5px  solid var(--borde-sobra-snaranja);
     padding: 0%;
     background-color: var(--background-2-sbeige);
 
@@ -44,13 +45,21 @@ flex-flow: row wrap ;
 justify-content: space-between;
 align-items: center;
 box-sizing: border-box;
-
+/* width: 960px; */
+margin-left: auto;
+margin-right: auto;
 
        }
+
+
+       nav {
+        display: flex;
+        align-items: center;
+      }
+
   
  nav ul li a{
    
-
     display: flex;
     justify-content: center;
     list-style: none;
@@ -59,10 +68,7 @@ box-sizing: border-box;
     font-weight: 400;
     font-family: 'Belanosima', sans-serif;
     padding: 20px;
-   
-   
-    
-  
+    list-style: none;
    
     
  }      
@@ -80,11 +86,10 @@ header ul{
     display: flex;
     margin: auto;
     align-items: center;
-   
+    justify-content: space-around;
+    font-size: 18px;
    
    }
-
-
 
 .link{
  
@@ -105,6 +110,7 @@ header ul{
 .imgchicos {
   
   margin: 0;
+  padding: 3px;
 
 }
 
@@ -113,44 +119,69 @@ h1{
     text-align: center;
     padding:0;
     background-color: var(--background-2-sbeige);
-    border: 3px solid var(--background-3-sverde)
+    border: 3px solid var(--background-3-sverde);
+    font-size: 35px;
+    
     }
    
    
-
+.h1index{
+  padding: 3px;
+}
 
 aside {
     width: 20%;
     height: 20%;
     margin: 2px;
     padding-left: 15px;
-    margin-left: px;
+    
    
     float: right;
     font-style: italic;
-    background-color: lightgray;
+    
   }
 
   .quienessomos{
-    margin-right: 20px;
+  
+    margin-bottom: 13px;
     padding: 0px;
     background: none;
+    float: left;
+    border-bottom: var(--main-bg-color-negro) 1px solid;
+    
   }
+  .quienessomos aside{
+    float: left;
+    
+  }
+
 p{
   padding: 5px;
+  margin: 17px;
 }
 
   
   
 .porque{
+  
        margin-right: 60px;
     padding: 0px;
     background: none;
   }
 
+.aporque{
+  display: flex;
+  margin-right: auto;
+  margin-top: -21px;
+  box-sizing: border-box
+}
+
 h2{ 
   font-family: 'Belanosima', sans-serif;
   padding: 5px;
+  margin: auto;
+  border-top: var(--main-bg-color-negro) 1px solid;
+  margin-left: 10px;
 }
 
 
@@ -159,8 +190,9 @@ h2{
   gap: 10%;
   align-content: center;
   margin-right: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   margin-left: 2px;
+  justify-content: center;
 }
 
 article  h3{
@@ -186,6 +218,10 @@ article.propuestasedu {
   background: none;
 }
 
+.snoticia{
+  margin-bottom: 80px;
+}
+
 
  footer{
 
@@ -196,8 +232,10 @@ article.propuestasedu {
  background-color: var(--background-1-sazul);
  box-sizing: border-box;
  align-items: center;
- gap: 10rem ;
+ font-size: 13px;
 
+ 
+ justify-content: space-around;
     }
     
 h3{
@@ -211,6 +249,7 @@ h3{
 font-size:70%;
     }
     
+  
 
 
    h4{
@@ -222,8 +261,58 @@ font-size:70%;
     margin-right: 0.5rem;
 }
 
+footer nav {
+  flex-direction: column;
+}
+
+/* Menu */
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-icon .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked ~ nav ul {
+  display: flex;
+  /* flex-direction: column;
+  position: absolute; */
+  top: 70px;
+  right: 0;
+  background-color: var(--background-1-sazul);
+  width: 100%;
+}
+
+input[type="checkbox"]:checked ~ .menu-icon .bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+input[type="checkbox"]:checked ~ .menu-icon .bar:nth-child(2) {
+  opacity: 0;
+}
+
+input[type="checkbox"]:checked ~ .menu-icon .bar:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
 @media screen and (max-width: 550px) {
-  
+ /* Menu  */
+  .menu-icon {
+    display: block;
+}
+
   body{
     width: 100%;
     margin: 0px;
@@ -235,19 +324,21 @@ font-size:70%;
         
     }
 
-  h1{
-    font-family: 'Poppins', sans-serif;
-  }
+
     
 spam{
   background-color: none;
 }
 
-.porque {
+.porque aside{
   display: none;
 }
     
-.quienessomos{
+.quienessomos aside{
+  display: none;
+}
+
+.noticia{
   display: none;
 }
 
@@ -255,6 +346,8 @@ footer{
 display: flex;
   justify-content: flex-start;
   gap: 2rem ;
+  font-size: 15px;
+  flex-direction: column;
 }
 
 .footeruntre{
@@ -262,27 +355,56 @@ display: flex;
   
 }
 
-
-
-nav ul {
-  flex-direction: column;
-  align-items: flex-start;
+ul.nav-links{
+  display: none;
 }
+
+
+
+
 
 nav ul li a {
   padding: 5px;
   font-size: 12px;
 }
 
+h1{
+  font-size: 20px;
+}
+
 .h1index{
 display: block;
-height: 3rem;
-width: 9rem;
-font-size: 9px;
-position: absolute;
-top: 13px;
-right: 13px;
+font-size: 8px;
 
+
+}
+
+input[type="checkbox"]:checked ~ nav ul {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 70px;
+  left: -120px;
+  background-color: var(--background-1-sazul);
+  width: 47%;
+  align-items: baseline;
+  text-decoration: none;
+}
+
+
+
+
+.propuestasedu {
+  display: flex;
+  gap: 10%;
+  align-content: flex-start;
+  margin-right: 10px;
+  margin-bottom: 65px;
+  margin-left: 2px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 }
@@ -317,7 +439,7 @@ right: 13px;
  
   textarea,
   select {
-    background: var(--main-bg-color-negro) ;
+    background: var() ;
     border:none;
     font-size: 16px;
     height: auto;
@@ -382,5 +504,7 @@ right: 13px;
     form {
       max-width: 480px;
     }
+
   
+   
   }

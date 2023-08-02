@@ -24,54 +24,64 @@
 
     <body>
      <div class="contenedor">
-    <header>
-        
-        <nav class="link">
-            <ul  type="none">
-                <li><a class="linav" href="#QuienesSomos">Quienes somos</a></li>
+ 
+
+ <header>
+ 
+    <input type="checkbox" id="toggle">
+    <nav class="link">
+        <label for="toggle" class="menu-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </label>
+        <ul class="nav-links">
+            <li><a class="linav" href="#QuienesSomos">Quienes somos</a></li>
                 <li><a  class="linav" href="#PorQue">¿Por qué elegirnos?</a></li>
                 <li><a  class="linav" href="#Propuesta">Propuesta educativa</a></li>
                 <li><a  class="linav" href="#Noticias">Últimas noticias</a></li>
                 <li><a  class="linav" href="./Form/form.html">Formulario Inscripcion 2024</a></li>
-            </ul>
-            
-          </nav>
-         <div class="h1index">
+        </ul>
+    </nav>
+</header>
+
+        <div class="h1index">
             <h1>Instituto de educación primaria <br> UntrefSchool</h1>
-         </div>
-       
-           
-         
-           <div class="imgchicos"> 
+         </div> 
+               
+                    <div class="imgchicos"> 
               <img width="100%"  src="./IMG/imgchicos.webp" alt="ImagenAulaSchool">
          </div>
-
-    </header>
-
+ 
 <main>
 
-    <hr>
-<aside class="quienessomos">
-    <img width="126" height="126" src="./IMG/untref.jpg" alt="">
-    
-</aside>
-<h2 id="QuienesSomos">Quienes somos</h2>
-<p>Abrimos nuestras puertas en 1974 como fruto de la inquietud, esfuerzo y dedicación de nuestros docentes Especializados, así como de la colaboración decidida de nuestro sólido equipo docente y de un grupo de padres de familia deseosos de participar en una Institución que promoviera el crecimiento de las personas en un ambiente de responsabilidad, respeto y libertad..</p>
+<section id="QuienesSomos" class="quienessomos">
+<h2 >Quienes somos</h2>  
+<aside >
+      <img width="126" height="126" src="./IMG/untref.jpg" alt="">
+ </aside>
+ <p>Abrimos nuestras puertas en 1974 como fruto de la inquietud, esfuerzo y dedicación de nuestros docentes Especializados, así como de la colaboración decidida de nuestro sólido equipo docente y de un grupo de padres de familia deseosos de participar en una Institución que promoviera el crecimiento de las personas en un ambiente de responsabilidad, respeto y libertad..</p>
+ </section>
+ 
 
+ <h2>¿Por qué elegirnos?</h2>
+<section id="PorQue" class="porque">
 
-<hr>
-<aside class="porque">
-    <img  height="100" width="180" src="./IMG/porqueelegirnos.webp" alt="">
+<aside class="aporque">
+    <img  height="120" width="180" src="./IMG/porqueelegirnos.webp" alt="">
 </aside>
-<h2 id="PorQue">¿Por qué elegirnos?</h2>
+
 <p>Somos una institución educativa con más de 49 años de experiencia, cuya principal misión es que nuestros alumnos sean personas exitosas y logren ser conscientes de su individualidad dentro de una comunidad global.
 Modelo basado en el desarrollo de competencias con un nivel académico de excelencia.</p>
+</section>
 
-<hr>
 
-<h2 id="Propuesta">Propuesta educativa</h2>
+
+
+<section id="Propuesta">
+<h2 >Propuesta educativa</h2>
 <p> intercambio de experiencias en áreas pedagógicas centrales como Educación Ambiental, Prácticas del Lenguaje, Matemáticas, Ciencias Sociales, Inglés, Robotica, Educacion Física e Inclusión de alumnos con necesidades especiales. Durante estos años hemos logrado homologar de hecho todo el trayecto escolar de 1ero a 7mo grado compartiendo métodos, contenidos y carga horaria para todo el nivel primario..</p>
-<br>
+
 <div class="propuestasedu"> 
     <article   class="propuestasedu">
         <a href="" alt="Ingles">
@@ -90,6 +100,7 @@ Modelo basado en el desarrollo de competencias con un nivel académico de excele
             <h3>Medio Ambiente</h3>
         </a>
     </article>
+
     <article   class="propuestasedu">
         <a href="" alt="educacion Fisica">
             <div class="hexagono1">
@@ -108,22 +119,21 @@ Modelo basado en el desarrollo de competencias con un nivel académico de excele
         </a>
     </article>
 </div>
-<br>
-<hr>
+</section>
 
+<section id="Noticias" class="snoticia">
+<h2 >Últimas noticias</h2>
 <aside class="noticia">
 <img width="150" height="120" src="./IMG/casita.gif" alt="">
 </aside> 
-
-<h2 id="Noticias">Últimas noticias</h2>
 <p>Inauguramos nuestro nuevo proyecto educativo de Educación Infantil: La Casita Común. Un proyecto que persigue la educación integral de nuestro alumnado desde 1 año de edad.</p>
 
-
+</section>
 
 </main>
-<hr>
+
 <footer>
-    <nav>
+    <nav class="redes">
         <h3>Redes sociales</h3>
         <ul>
             <li>Facebook</li>
@@ -151,5 +161,6 @@ Modelo basado en el desarrollo de competencias con un nivel académico de excele
 </footer>
 
   </div>
-
+     
+  </body>
 </html>
